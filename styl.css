@@ -1,0 +1,196 @@
+
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+
+  a{ color: inherit; text-decoration: none;}
+
+  .back{
+    background: url("images/columns1.JPG") no-repeat center;
+    background-size: cover;
+    border-bottom: 2px solid rgba(100, 149, 237, 0.7);
+  }
+
+ .NDU{
+  color: #800000;
+  margin-top: 30px;
+  padding: 30px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+  }
+  #N{
+    font-size: 14px;
+  }
+
+  .BN1{
+    width: 105px;
+    height: 10px;
+    margin: 10px;
+    float: left;
+  }
+  .BN2{
+    width: 278px;
+    height: 16px;
+    margin: 10px;
+    padding: 0px 4px 0px 4px;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+   #menu{
+     position: float;
+     background-color: rgb(255,255,255,.6);
+   }
+
+   #menu nav{
+     padding-right: 40px;
+     border-bottom: 1px solid rgba(100, 149, 237, 0.5);
+     text-align: center;
+     font-size: 0;
+   }
+
+   #menu ul{
+     list-style: none;
+     margin: 0;
+   }
+
+   #menu nav > ul{
+     display: inline-block;
+     text-align: center;
+     overflow: hidden;
+     height: 37px;
+     z-index: 2;
+   }
+
+   #menu nav > ul:hover{
+     overflow: visible;
+   }
+
+   #menu nav > ul + div{
+     position: absolute;
+     left: 0; width: 100%; height:0;
+     background: rgba(142, 210, 255, 0.9);
+     z-index: -0;
+     transition: all 0.5s;
+     opacity: 0;
+   }
+
+   #menu nav > ul:hover + div{
+     height: 83px;
+     opacity: 1;
+   }
+
+   #menu nav > ul > li{
+     display: inline-block;
+     position: relative;
+   }/*가운데 정렬을 위*/
+
+   #menu nav > ul > li > a{
+     display: block;
+     position: relative;
+     width:130px;
+     height: 35px;
+     font-size: 20px;
+     font-style: fantasy;
+   }
+
+   #menu nav > ul > li > a::after{
+     content: "";
+     position: absolute;
+     left: 50%; bottom: -4px;/*선 같은 위치로*/
+     width: 0;
+     height: 2px;
+     background:#5A5AFF;
+     transition: all 0.5s;
+     z-index: 3;
+   }
+
+   #menu nav > ul > li:hover > a:after{
+     left: 0;
+     width: 100%;
+   }
+
+   #menu nav > ul > li > ul{
+     opacity: 0;
+     position: absolute;
+     width: 100%;
+     padding: 10px 0 0;
+     z-index: 2;
+   }
+
+   #menu nav > ul:hover ul{
+     display: block;
+     opacity: 1;
+     transition: all 0.5s;
+   }
+
+   #menu nav > ul > li > ul li{
+     line-height: 30px;
+   }
+
+   #menu nav > ul > li >ul a{
+     font-size: 14px;
+     position: relative;
+     transition: all 0.5s;
+     z-index: 29;
+   }
+
+   #menu nav > ul > li >ul a:hover{
+     color: #FF607F;
+     font-size: 15px;
+     font-weight: bold;
+   }
+
+   #menu nav > ul > li >ul a:after{
+     content: "";
+     position: absolute;
+     left: 50%; bottom: -5px;/*선 같은 위치로*/
+     width: 0;
+     height: 2px;
+     background:#FF5675;
+     transition: all 0.5s;
+   }
+   #menu nav > ul > li >ul a:hover:after{
+     left: 0;
+     width: 100%;
+   }
+
+    .list{
+      text-align: center;
+    }
+    .img-list{
+      width: 270px;
+      height: 370px;
+      margin: 20px 0px 0px 20px;
+      text-align: center;
+      float: left;
+    }
+    .JCI{
+      width: auto;
+      height: auto;
+      border: 3px solid #ffcab2;
+      border-radius: 20px;
+      text-align: center;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 60px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    @media(min-width: 1020px) {
+      .JCI{
+        width: 1000px;
+        height: auto;
+        border: 3px solid #ffcab2;
+        border-radius: 20px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
